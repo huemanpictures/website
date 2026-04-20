@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clients — Hueman Pictures</title>
+  <meta name="description" content="Hueman Pictures partners with brands, filmmakers, and organizations to deliver writing, filming, and editing services. Based in Austin, TX.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+  <style>
+    .services-offered {
+      background: var(--bg-1);
+      border-top: 1px solid var(--border);
+    }
+    .services-offered-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    @media (max-width: 900px) {
+      .services-offered-grid { grid-template-columns: 1fr; }
+    }
+    .offered-card {
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+    }
+    .offered-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    .offered-card p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+    .offered-card .offered-icon {
+      font-size: 1.8rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .process-steps {
+      counter-reset: step;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .process-step {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 24px;
+      padding: 32px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: flex-start;
+    }
+    .process-step:last-child { border-bottom: none; }
+    .step-num {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      color: var(--text-dim);
+      line-height: 1;
+    }
+    .step-content h3 {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .step-content p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.75;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ───────────────────────────────── -->
+  <nav class="nav scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">HUEMAN<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="our-work.html">Our Work</a></li>
+        <li><a href="clients.html" class="active">Clients</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="mailto:huemanpictures@gmail.com" class="nav-cta">Work With Us</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="our-work.html">Our Work</a>
+    <a href="clients.html" class="active">Clients</a>
+    <a href="merch.html">Merch</a>
+    <a href="mailto:huemanpictures@gmail.com">Work With Us</a>
+  </nav>
+
+  <!-- ── Page Header ──────────────────────────────── -->
+  <header class="page-header">
+    <div class="container page-header-inner">
+      <p class="section-label">// Client Work</p>
+      <h1>WHO WE'VE <span>WORKED WITH.</span></h1>
+      <p>
+        We bring the same story-first approach to client work that we do to our
+        originals. Here's who trusted us with their projects.
+      </p>
+    </div>
+  </header>
+
+  <!-- ── Clients Grid ──────────────────────────────── -->
+  <section>
+    <div class="container">
+      <div class="clients-grid">
+
+        <!-- Elevate Films -->
+        <div class="client-card fade-up">
+          <div class="client-card-header">
+            <div>
+              <h3>Elevate Films</h3>
+              <span class="client-type">Documentary &amp; Commercial Production</span>
+            </div>
+            <div class="client-logo-placeholder">E</div>
+          </div>
+          <p class="client-desc">
+            Contract editing for an award-winning production company founded by filmmaker Mikki Willis.
+            We handled post-production shaping across documentary, commercial, and narrative projects —
+            focusing on story, pacing, and visual tone.
+          </p>
+          <div class="client-services">
+            <span class="service-pill">Editing</span>
+            <span class="service-pill">Post-Production</span>
+            <span class="service-pill">Story Shaping</span>
+          </div>
+        </div>
+
+        <!-- FullyRawKristina -->
+        <div class="client-card fade-up fade-up-delay-1">
+          <div class="client-card-header">
+            <div>
+              <h3>FullyRaw Kristina</h3>
+              <span class="client-type">YouTube · 1.45M Subscribers</span>
+            </div>
+            <div class="client-logo-placeholder">K</div>
+          </div>
+          <p class="client-desc">
+            Ongoing video editing support for one of YouTube's most prominent vegan lifestyle channels.
+            We maintained Kristina's signature brand voice across high-volume content — keeping everything
+            engaging, story-driven, and consistent for an audience of 1.45 million.
+          </p>
+          <div class="client-services">
+            <span class="service-pill">Video Editing</span>
+            <span class="service-pill">Brand Voice</span>
+            <span class="service-pill">High-Volume Content</span>
+          </div>
+        </div>
+
+        <!-- Justin Ray -->
+        <div class="client-card fade-up">
+          <div class="client-card-header">
+            <div>
+              <h3>Justin Ray</h3>
+              <span class="client-type">Director &amp; Writer · Caster Studios</span>
+            </div>
+            <div class="client-logo-placeholder">J</div>
+          </div>
+          <p class="client-desc">
+            A full-spectrum collaboration with the director of <em>Gus Plus Us</em> and founder of Caster Studios
+            in Dripping Springs. We worked across script writing, editing, acting, and personal studio
+            productions — the full creative partnership.
+          </p>
+          <div class="client-services">
+            <span class="service-pill">Script Writing</span>
+            <span class="service-pill">Editing</span>
+            <span class="service-pill">Acting</span>
+            <span class="service-pill">Production</span>
+          </div>
+        </div>
+
+        <!-- Dancer's Give Back Dallas -->
+        <div class="client-card fade-up fade-up-delay-1">
+          <div class="client-card-header">
+            <div>
+              <h3>Dancer's Give Back Dallas</h3>
+              <span class="client-type">Non-Profit · Cancer Research</span>
+            </div>
+            <div class="client-logo-placeholder">D</div>
+          </div>
+          <p class="client-desc">
+            Filmed and edited promotional videos for 40 local dance studios and hundreds of participating
+            businesses raising funds for cancer research. High-volume, high-stakes work for an organization
+            making a real difference.
+          </p>
+          <div class="client-services">
+            <span class="service-pill">Filming</span>
+            <span class="service-pill">Editing</span>
+            <span class="service-pill">Promotional Video</span>
+            <span class="service-pill">Non-Profit</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Services We Offer ──────────────────────────── -->
+  <section class="services-offered">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-label">// What You Get</p>
+        <h2>SERVICES FOR<br><span style="color:var(--accent)">CLIENT WORK.</span></h2>
+        <p>We're not a big agency. We're two people who are really good at what they do.</p>
+      </div>
+      <div class="services-offered-grid">
+        <div class="offered-card fade-up">
+          <span class="offered-icon">✍️</span>
+          <h3>WRITING</h3>
+          <p>Scripts, concepts, brand narratives, and creative strategy. We write to your brief and push it past the brief when the brief isn't enough.</p>
+        </div>
+        <div class="offered-card fade-up fade-up-delay-1">
+          <span class="offered-icon">🎬</span>
+          <h3>FILMING</h3>
+          <p>Single-camera. Documentary-style. Interview setups. Whatever your project calls for, we show up with the right approach and we know how to use it.</p>
+        </div>
+        <div class="offered-card fade-up fade-up-delay-2">
+          <span class="offered-icon">🎞️</span>
+          <h3>EDITING</h3>
+          <p>Post-production that serves the story. We cut for pacing, tone, and emotional impact — not just for runtime. High-volume capacity available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── How We Work ───────────────────────────────── -->
+  <section>
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;">
+        <div class="section-header fade-up" style="margin-bottom:0;">
+          <p class="section-label">// The Process</p>
+          <h2>HOW WE<br>WORK.</h2>
+          <p style="margin-top:20px;">
+            No bloated agency process. No three-week discovery calls. We move fast, communicate clearly,
+            and make things you'll actually want to show people.
+          </p>
+          <a href="mailto:huemanpictures@gmail.com" class="btn btn-primary" style="margin-top:32px;">Start a Conversation →</a>
+        </div>
+        <div class="process-steps fade-up fade-up-delay-1">
+          <div class="process-step">
+            <span class="step-num">01</span>
+            <div class="step-content">
+              <h3>You Tell Us What You Need</h3>
+              <p>Brief us on the project. What you have, what you don't, what you're trying to say, and who you're saying it to.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="step-num">02</span>
+            <div class="step-content">
+              <h3>We Come Back With a Plan</h3>
+              <p>Script concept, shot approach, edit strategy — whatever the project needs. We'll align before anything gets made.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="step-num">03</span>
+            <div class="step-content">
+              <h3>We Make It</h3>
+              <p>Film days, edit rounds, revisions. We deliver on time and we deliver something good.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="step-num">04</span>
+            <div class="step-content">
+              <h3>You Have a Video You're Proud Of</h3>
+              <p>That's the goal. That's always been the goal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────── -->
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="cta-banner fade-up">
+        <h2>LET'S WORK<br><span>TOGETHER.</span></h2>
+        <p>Send us a project brief, a half-baked idea, or just a vibe. We'll figure out the rest.</p>
+        <div class="cta-actions">
+          <a href="mailto:huemanpictures@gmail.com" class="btn btn-primary">huemanpictures@gmail.com</a>
+          <a href="our-work.html" class="btn btn-outline">See Our Work First →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>HUEMAN<span>.</span></h3>
+          <p>Character-based mockumentary comedy from Austin, TX. Founded by Damien Boykin &amp; Ryan Parr.</p>
+          <div class="footer-socials">
+            <a href="https://www.youtube.com/@HuemanPictures" class="social-link" aria-label="YouTube" target="_blank" rel="noopener"><span>▶</span></a>
+            <a href="https://www.instagram.com/huemanpictures" class="social-link" aria-label="Instagram" target="_blank" rel="noopener"><span>◈</span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our-work.html">Our Work</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="merch.html">Merch</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:huemanpictures@gmail.com">Email Us</a></li>
+            <li><a href="clients.html">Work With Us</a></li>
+            <li><a href="https://www.youtube.com/@HuemanPictures" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://www.instagram.com/huemanpictures" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Hueman Pictures. Austin, TX.</p>
+        <p>Made with stubbornness and caffeine.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
