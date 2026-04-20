@@ -10,9 +10,9 @@
   align-items: baseline;
 }
 .logo-black { color: #111111; }
-.logo-e     { color: #C8852A; }
+.logo-e     { color: #FFB300; }
 .hueman-logo.inverted .logo-black { color: #ffffff; }
-.hueman-logo.inverted .logo-e     { color: #C8852A; }
+.hueman-logo.inverted .logo-e     { color: #FFB300; }
 
 /* ── Design Tokens ─────────────────────────────────── */
 :root {
