@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@700&family=Inter:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* ── Hueman Logotype ───────────────────────────────── */
+.hueman-logo {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  display: inline-flex;
+  align-items: baseline;
+}
+.logo-black { color: #111111; }
+.logo-e     { color: #C8852A; }
+.hueman-logo.inverted .logo-black { color: #ffffff; }
+.hueman-logo.inverted .logo-e     { color: #C8852A; }
 
 /* ── Design Tokens ─────────────────────────────────── */
 :root {
