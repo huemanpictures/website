@@ -82,6 +82,36 @@ if (notifyForm) {
   });
 }
 
+/* ── Video lightbox ────────────────────────────────── */
+const lightbox = document.getElementById('lightbox');
+const lightboxIframe = document.getElementById('lightbox-iframe');
+const lightboxClose = document.getElementById('lightbox-close');
+
+function openLightbox(videoId) {
+  lightboxIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`;
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  lightboxIframe.src = '';
+  document.body.style.overflow = '';
+}
+
+if (lightbox) {
+  document.querySelectorAll('.video-thumb-card').forEach(card => {
+    card.addEventListener('click', () => openLightbox(card.dataset.vid));
+  });
+  lightboxClose?.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+  });
+}
+
 /* ── Duplicate marquee content for seamless loop ───── */
 const tracks = document.querySelectorAll('.marquee-track');
 tracks.forEach(track => {
