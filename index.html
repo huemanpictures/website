@@ -206,12 +206,14 @@
 
         <!-- Card 2 -->
         <div class="work-card fade-up fade-up-delay-1">
-          <div class="work-thumb">
-            <div class="work-thumb-bg grad-2">
-              <div class="play-btn"><span>▶</span></div>
+          <div class="work-thumb yt-thumb" data-vid="a2FzsLzp-Mo">
+            <img src="https://img.youtube.com/vi/a2FzsLzp-Mo/hqdefault.jpg"
+                 alt="The Interrogation — $62 Million Gone Missing thumbnail" loading="lazy">
+            <div class="video-play-overlay">
+              <div class="video-play-btn">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
             </div>
-            <div class="work-thumb-overlay"></div>
-            <div class="thumb-text">THE INTERROGATION</div>
           </div>
           <div class="work-meta">
             <span class="tag">Mockumentary</span>
@@ -327,6 +329,19 @@
       </div>
     </div>
   </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Video player">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close video">✕</button>
+      <div class="lightbox-video">
+        <iframe id="lightbox-iframe"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                title="Hueman Pictures video player"></iframe>
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

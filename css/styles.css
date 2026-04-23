@@ -1145,6 +1145,29 @@ section { padding: 100px 0; }
 }
 .video-thumb-card:hover .video-play-btn svg { fill: #000; }
 
+/* ── Work card with real YT thumbnail ─────────────── */
+.work-thumb.yt-thumb { cursor: pointer; }
+.work-thumb.yt-thumb img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85);
+  transition: transform 0.4s var(--ease), filter 0.3s;
+}
+.work-thumb.yt-thumb:hover img {
+  transform: scale(1.04);
+  filter: brightness(0.55);
+}
+.work-thumb.yt-thumb:hover .video-play-btn {
+  background: #FFB300;
+  border-color: #FFB300;
+  transform: scale(1.12);
+  box-shadow: 0 0 32px rgba(255,179,0,0.45);
+}
+.work-thumb.yt-thumb:hover .video-play-btn svg { fill: #000; }
+
 /* ── Lightbox ──────────────────────────────────────── */
 .lightbox {
   position: fixed;

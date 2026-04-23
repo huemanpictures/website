@@ -100,7 +100,7 @@ function closeLightbox() {
 }
 
 if (lightbox) {
-  document.querySelectorAll('.video-thumb-card').forEach(card => {
+  document.querySelectorAll('.video-thumb-card, .yt-thumb').forEach(card => {
     card.addEventListener('click', () => openLightbox(card.dataset.vid));
   });
   lightboxClose?.addEventListener('click', closeLightbox);
